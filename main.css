@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .clip-five-corners {
+    clip-path: polygon(
+      0% 0%,        /* top-left */
+      85% 0%,       /* just before top-right */
+      100% 15%,     /* extra cone on top-right */
+      100% 100%,    /* bottom-right */
+      0% 100%       /* bottom-left */
+    );
+  }
+}
